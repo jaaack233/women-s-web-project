@@ -10,9 +10,11 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- connect to a Google font -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <!-- connect to a Font Aweseom font -->
-  <!-- connect to a favicon -->
+  <script src="https://kit.fontawesome.com/b6cbbbf528.js" crossorigin="anonymous"></script>
 
   <title>Women's Web - History</title>
 </head>
@@ -21,11 +23,12 @@
   <a class="skip" href="#mainstuff">Skip to Main Content</a>
   <header>
     <nav>
+      <button onclick="expand()"><i class="fa-sharp fa-solid fa-bars"></i></button>
       <ul>
-        <li><a href="index.html">About</a></li>
-        <li><a href="literature.html">Literature</a></li>
+        <li class="hidden"><a href="index.html">About</a></li>
+        <li class="hidden"><a href="literature.html">Literature</a></li>
         <li class="active"><a href="history.html">History and Politics</a></li>
-        <li><a href="femdict.html">Feminist Dictionary</a></li>
+        <li class="hidden"><a href="femdict.html">Feminist Dictionary</a></li>
       </ul>
     </nav>
     <!-- definitions from meriam webster -->
@@ -503,6 +506,7 @@
     <p>Orginal content created by Kelsey Toporski 2019</p>
     <a href="#top" class="tops">Back to Top</a>
   </footer>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
