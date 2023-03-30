@@ -270,6 +270,15 @@ dl p{
     #home-img {
         display: block;
     }
+
+    nav button{
+        display: none;
+    }
+
+    ul li {
+        display: block !important;
+        margin-right: 20px;
+    }
 }
 
 
