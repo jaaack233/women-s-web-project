@@ -1,5 +1,5 @@
 body {
-    background-color: #a5a58d;
+    background-color: #d8d8d8;
     font-size: 125%;
 }
 
@@ -190,7 +190,7 @@ img:not([id="home-img"]):hover {
     margin: 15px;
     padding: 10px;
     padding-bottom: 20px;
-    border: 0.5px solid rgb(85, 85, 85);
+    border: 0.5px solid rgb(192, 192, 192);
     box-shadow: 0px 0px 10px rgb(69, 69, 69);
 }
 
@@ -220,7 +220,7 @@ img:not([id="home-img"]):hover {
     margin: 15px;
     padding: 10px;
     padding-bottom: 20px;
-    border: 0.5px solid rgb(85, 85, 85);
+    border: 0.5px solid rgb(169, 169, 169);
     box-shadow: 0px 0px 10px rgb(69, 69, 69);
 }
 
@@ -244,6 +244,7 @@ dt {
     font-size: 24px;
     margin-bottom: 10px;
     color: rgb(146, 40, 40);
+    font-weight: bold;
 }
 
 dd {
@@ -261,6 +262,37 @@ dl p{
 
     .hist {
         grid-template-columns: 50% 50%;
+    }
+
+    nav ul{
+        flex-direction: row;
+    }
+    
+    #home-img {
+        display: block;
+    }
+
+    nav button{
+        display: none;
+    }
+
+    ul li {
+        display: block !important;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    main {
+        padding: 60px 10%;
+    }
+
+    .lite {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .hist {
+        grid-template-columns: repeat(3,1fr);
     }
 
     nav ul{
